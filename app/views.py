@@ -10,9 +10,30 @@ from app import app, lm
 from forms import ExampleForm, LoginForm
 from models import User
 
+
 @app.route('/')
 def index():
 	return render_template('index.html')
+
+
+@app.route('/btc/')
+def btc():
+	return render_template('btc.html')
+
+
+@app.route('/eth/')
+def eth():
+	return render_template('eth.html')
+
+
+@app.route('/work/')
+def work():
+	return render_template('work.html')
+
+
+@app.route('/about/')
+def about():
+	return render_template('about.html')
 
 
 @app.route('/list/')
