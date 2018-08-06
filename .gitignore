@@ -40,3 +40,4 @@ nosetests.xml
 # Nilton Comandos
 comandos_git.sh
 .directory
+.idea
